@@ -1,5 +1,9 @@
 package br.com.unicamp.inf323.aula2;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
 public class Clidlet {
 
 	public final void flipper() {
@@ -37,7 +41,7 @@ class Singer {
 class Tenor extends Singer {
 	void do2() {}
 	
-	public String sing() {
+	public String sing(List<String> nomes) {
 		return "fa";
 	}
 
@@ -48,6 +52,7 @@ class Chrome {
 		Singer x1 = new Singer();
 		Singer x2 = new Tenor();
 		Tenor y1 = new Tenor();
+		y1.sing(new ArrayList<>());
 		
 	}
 }
